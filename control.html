@@ -1,0 +1,86 @@
+<html>
+<head>
+<title>ROBOT CONTROL PANEL</title>
+<style>
+body{
+background-color:#6da9b4;}
+#button{
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+background-color: white; 
+color: black; 
+border: 2px solid #008CBA;}
+#button:hover {
+background-color: #008CBA;
+color: white;}
+ul{
+list-style-type: none;
+overflow: hidden;}
+li{
+display: inline;float:center;}
+h1{
+text-align:center;}
+.column{
+float: left;}
+.row:after{
+content: "";
+display: table;
+clear: both;}
+table{
+margin-top:60%;
+margin-left:30%;
+}
+#buttonstop{
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin-left:22px;
+  cursor: pointer;
+background-color: white; 
+color: black; 
+border: 2px solid #008CBA;
+}
+#buttonstop:hover {
+background-color: #008CBA;
+color: white;}
+#first{text-align:center;}
+
+</style>
+</head>
+<body>
+<h1>ROBOT CONTROL PANEL</h1>
+<div class="row">
+<ul>
+<div class="column">
+<li>
+<p><img src="contt.png"  height="480" width="600" alt="control as you like"/>
+</p>
+</li></div>
+<div class="column">
+<li>
+<div style="margin-top:50%;">
+<form action="active.php" method="post">
+<p id="first">
+<button type="submit" name="Forwards" id="button">Forwards</button>
+</p>
+<p id="first">
+<button type="submit" name="Left" id="button">Left</button>
+<button type="submit" name="STOP" id="button">STOP</button>
+<button type="submit" name="Right" id="button">Right</button>
+</p>
+<p id="first">
+<button type="submit" name="Backwards" id="button">Backwards</button>
+</p>
+</form>
+</div>
+
+
+</li></div>
+</ul></div>
+</body>
+</html>
